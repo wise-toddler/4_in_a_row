@@ -1,0 +1,32 @@
+@keyframes dropPiece {
+  0% {
+    transform: translateY(-400%);
+  }
+  70% {
+    transform: translateY(10%);
+  }
+  85% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-drop {
+  animation: dropPiece 0.6s ease-in-out;
+}
+
+/* Mobile-first responsive design */
+@media (max-width: 640px) {
+  .grid {
+    gap: 0.5rem;
+  }
+}
+
+/* Disable hover effects on mobile */
+@media (hover: none) {
+  button:hover {
+    background-color: inherit;
+  }
+}
